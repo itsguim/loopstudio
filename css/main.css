@@ -1,0 +1,323 @@
+.wrapper {
+	width: 90%;
+	margin-inline: auto;
+}
+
+/* <> NAV E HEADER -------- */
+
+nav {
+	padding-top: 1.5rem;
+}
+
+nav .nav-items {
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+}
+
+nav .logo {
+	padding-top: 0.5rem;
+}
+
+nav .btn-openmenu {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+}
+
+header::before {
+	content: '';
+	background: url(../assets/mobile/image-hero.jpg) no-repeat;
+	background-size: cover;
+	width: 100vw;
+	height: 45rem;
+
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: -1;
+}
+
+header {
+	height: auto;
+}
+
+.herotext {
+	margin: 10rem auto 10rem;
+	display: flex;
+	justify-content: center;
+	border: 2px solid var(--cl-primary-l);
+}
+
+.herotext h1 {
+	color: var(--cl-primary-l);
+	font-family: var(--ff-secondary--);
+	font-size: 2.6rem;
+	line-height: 2.5rem;
+	padding: 1.5rem;
+	font-weight: normal;
+}
+
+/* ~~~~~~ MENU MOBILE ~~~~~~ */
+
+.menutoggle {
+	visibility: hidden;
+	opacity: 0;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -1;
+
+	transform: translateX(100%);
+}
+
+body.menu-expanded {
+	overflow: hidden;
+}
+
+body.menu-expanded .menutoggle {
+	background-color: var(--cl-primary-d);
+	height: 100vh;
+	width: 100vw;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 20;
+
+	visibility: visible;
+	opacity: 1;
+
+	transition: transform 300ms;
+	transform: translateX(0);
+}
+
+body.menu-expanded .menutoggle .menu-top {
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	padding-top: 1.5rem;
+}
+
+body.menu-expanded .menutoggle .btn-closemenu {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	height: fit-content;
+	align-content: flex-start;
+	padding-block: 0.7rem;
+}
+
+body.menu-expanded .menutoggle .menu-navigation {
+	margin-top: 8rem;
+}
+
+body.menu-expanded .menutoggle .menu-navigation ul {
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+body.menu-expanded .menutoggle .menu-navigation ul a {
+	text-decoration: none;
+	font-family: var(--ff-secondary--);
+	font-weight: normal;
+	color: var(--cl-primary-l);
+	display: inline-block; /*for styling on hover*/
+}
+
+body.menu-expanded .menutoggle .menu-navigation ul a::after {
+	content: '';
+	display: block;
+
+	background: var(--cl-primary-l);
+	width: 0;
+	height: 1px;
+	transition: width 0.1s;
+}
+
+body.menu-expanded .menutoggle .menu-navigation ul a:hover::after {
+	width: 100%;
+}
+/* ~~ Menu Toggle End ~~ */
+
+/* MAIN CONTENT <> SECTION 1 ----------- */
+
+section#informational {
+	background-color: var(--cl-primary-l);
+	margin-top: 25rem;
+}
+
+section#informational .info-img {
+	line-height: 0%;
+}
+
+.info-img img {
+	width: 100%;
+}
+
+section#informational .info-text {
+	margin: 2.6rem auto;
+}
+
+section h2 {
+	font-family: var(--ff-secondary--);
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: normal;
+	line-height: 2.3rem;
+}
+
+.info-text p {
+	text-align: center;
+	margin-top: 2rem;
+	color: var(--cl-neutral-l);
+	font-family: var(--ff-primary--);
+	font-weight: normal;
+	font-size: 1.1rem;
+	line-height: 2rem;
+}
+
+/* <> SECTION 2 ~ GRID ------------- */
+
+section#creations {
+	margin-top: 7.5rem;
+}
+
+section#creations .grid-menu {
+	list-style-type: none;
+
+	display: grid;
+	grid-template-rows: repeat(8, 1fr);
+
+	row-gap: 1.5rem;
+	padding-block: 3rem;
+}
+
+section#creations .grid-menu .grid-item {
+	height: 8rem;
+}
+
+section#creations .grid-menu .grid-item .gridtext {
+	font-family: var(--ff-secondary--);
+	font-weight: normal;
+	text-transform: uppercase;
+	color: var(--cl-primary-l);
+	word-wrap: break-word;
+	line-height: 1.8rem;
+
+	width: 100%;
+	height: 100%;
+	padding-top: 3.5rem;
+	padding-left: 1.3rem;
+}
+
+section#creations .grid-menu .grid-item .gridtext:hover {
+	color: var(--cl-primary-d);
+	background: rgba(255, 255, 255, 0.651);
+	transition: 100ms;
+}
+
+.btn-grid {
+	display: block;
+	margin-inline: auto;
+
+	font-size: 0.9rem;
+	font-family: var(--ff-primary--);
+	text-transform: uppercase;
+	letter-spacing: 0.5rem;
+
+	background-color: transparent;
+	padding: 1rem 2rem 1rem;
+	border: 2px solid var(--cl-primary-d);
+	cursor: pointer;
+}
+
+.btn-grid:hover {
+	background-color: var(--cl-primary-d);
+	color: var(--cl-primary-l);
+	transition: 150ms;
+}
+
+/* grid items -------*/
+.grid-menu .item1 {
+	background: linear-gradient(
+			90deg,
+			rgba(0, 0, 0, 0.4066001400560224) 6%,
+			rgba(249, 249, 249, 0) 100%
+		),
+		url(../assets/mobile/image-deep-earth.jpg) no-repeat;
+	background-size: cover;
+}
+
+.grid-menu .item2 {
+	background: linear-gradient(
+			90deg,
+			rgba(0, 0, 0, 0.4066001400560224) 6%,
+			rgba(249, 249, 249, 0) 100%
+		),
+		url(../assets/mobile/image-night-arcade.jpg) no-repeat;
+	background-size: cover;
+}
+
+.grid-menu .item3 {
+	background: linear-gradient(
+			90deg,
+			rgba(0, 0, 0, 0.4066001400560224) 6%,
+			rgba(249, 249, 249, 0) 100%
+		),
+		url(../assets/mobile/image-soccer-team.jpg) no-repeat;
+	background-size: cover;
+}
+
+.grid-menu .item4 {
+	background: linear-gradient(
+			90deg,
+			rgba(0, 0, 0, 0.4066001400560224) 6%,
+			rgba(249, 249, 249, 0) 100%
+		),
+		url(../assets/mobile/image-grid.jpg) no-repeat;
+	background-size: cover;
+}
+
+.grid-menu .item5 {
+	background: linear-gradient(
+			90deg,
+			rgba(0, 0, 0, 0.4066001400560224) 6%,
+			rgba(249, 249, 249, 0) 100%
+		),
+		url(../assets/mobile/image-from-above.jpg) no-repeat;
+	background-size: cover;
+}
+
+.grid-menu .item6 {
+	background: linear-gradient(
+			90deg,
+			rgba(0, 0, 0, 0.4066001400560224) 6%,
+			rgba(249, 249, 249, 0) 100%
+		),
+		url(../assets/mobile/image-pocket-borealis.jpg) no-repeat;
+	background-size: cover;
+}
+
+.grid-menu .item7 {
+	background: linear-gradient(
+			90deg,
+			rgba(0, 0, 0, 0.4066001400560224) 6%,
+			rgba(249, 249, 249, 0) 100%
+		),
+		url(../assets/mobile/image-curiosity.jpg) no-repeat;
+	background-size: cover;
+}
+
+.grid-menu .item8 {
+	background: linear-gradient(
+			90deg,
+			rgba(0, 0, 0, 0.4066001400560224) 6%,
+			rgba(249, 249, 249, 0) 100%
+		),
+		url(../assets/mobile/image-fisheye.jpg) no-repeat;
+	background-size: cover;
+}
