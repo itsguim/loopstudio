@@ -19,14 +19,18 @@ nav .nav-items {
 	align-content: center;
 }
 
-nav .logo {
+.nav-items .logo {
 	padding-top: 0.5rem;
 }
 
-nav .btn-openmenu {
+.nav-items .btn-openmenu {
 	background-color: transparent;
 	border: none;
 	cursor: pointer;
+}
+
+.nav-items .navlinks {
+	display: none;
 }
 
 header::before {
@@ -97,7 +101,7 @@ body.menu-expanded .menutoggle {
 	transform: translateX(0);
 }
 
-body.menu-expanded .menutoggle .menu-top {
+body.menu-expanded .menutoggle .menutoggle-top {
 	display: flex;
 	justify-content: space-between;
 	align-content: center;
@@ -113,25 +117,25 @@ body.menu-expanded .menutoggle .btn-closemenu {
 	padding-block: 0.7rem;
 }
 
-body.menu-expanded .menutoggle .menu-navigation {
+body.menu-expanded .menutoggle .menutoggle-nav {
 	margin-top: 8rem;
 }
 
-body.menu-expanded .menutoggle .menu-navigation ul {
+body.menu-expanded .menutoggle .menutoggle-nav ul {
 	list-style-type: none;
 	display: flex;
 	flex-direction: column;
 	gap: 1rem;
 }
 
-body.menu-expanded .menutoggle .menu-navigation ul a {
+body.menu-expanded .menutoggle .menutoggle-nav ul a {
 	font-family: var(--ff-secondary--);
 	font-weight: normal;
 	color: var(--cl-primary-l);
 	display: inline-block; /*for styling on hover*/
 }
 
-body.menu-expanded .menutoggle .menu-navigation ul a::after {
+body.menu-expanded .menutoggle .menutoggle-nav ul a::after {
 	content: '';
 	display: block;
 
@@ -141,7 +145,7 @@ body.menu-expanded .menutoggle .menu-navigation ul a::after {
 	transition: width 0.1s;
 }
 
-body.menu-expanded .menutoggle .menu-navigation ul a:hover::after {
+body.menu-expanded .menutoggle .menutoggle-nav ul a:hover::after {
 	width: 100%;
 }
 /* ~~ Menu Toggle End ~~ */
