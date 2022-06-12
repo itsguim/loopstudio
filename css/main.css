@@ -346,12 +346,33 @@ footer {
 
 .footer-menu .footer-menu-nav li {
 	text-align: center;
+	position: relative;
 }
 
 .footer-menu .footer-menu-nav a {
 	font-family: var(--ff-primary--);
+	display: block;
 	font-size: 0.9rem;
 	color: var(--cl-primary-l);
+	padding-block: 0.5rem;
+}
+
+.footer-menu .footer-menu-nav li::after {
+	content: '';
+
+	background-color: var(--cl-primary-l);
+	height: 1px;
+	width: 50%;
+
+	position: absolute;
+	bottom: 0px;
+	left: 25%;
+	transform: scaleX(0);
+	transition: transform 30ms ease-in-out;
+}
+
+.footer-menu .footer-menu-nav li:hover::after {
+	transform: scaleX(1);
 }
 
 .footer-menu .social-links {
@@ -382,6 +403,10 @@ footer {
 	transform: scaleX(1);
 }
 
+.social-links a i:hover {
+	opacity: 0.8;
+}
+
 .footer-menu p:not(.attribution) {
 	color: var(--cl-neutral-l);
 	font-size: 0.9rem;
@@ -392,7 +417,7 @@ footer {
 
 .attribution {
 	margin: 0.3rem;
-	font-size: 0.7rem;
+	font-size: 0.6rem;
 	color: var(--cl-neutral-l);
 }
 
