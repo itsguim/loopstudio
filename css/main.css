@@ -7,7 +7,7 @@ a {
 	text-decoration: none;
 }
 
-/* <> NAV E HEADER -------- */
+/* <> NAVBAR -------- */
 
 nav {
 	padding-top: 1.5rem;
@@ -33,40 +33,7 @@ nav .nav-items {
 	display: none;
 }
 
-header::before {
-	content: '';
-	background: url(../assets/mobile/image-hero.jpg) no-repeat;
-	background-size: cover;
-	width: 100vw;
-	height: 46rem;
-
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	z-index: -1;
-}
-
-header {
-	height: auto;
-}
-
-.herotext {
-	margin: 10rem auto 10rem;
-	display: flex;
-	justify-content: center;
-	border: 2px solid var(--cl-primary-l);
-}
-
-.herotext h1 {
-	color: var(--cl-primary-l);
-	font-family: var(--ff-secondary--);
-	font-size: 2.6rem;
-	line-height: 2.5rem;
-	padding: 1.5rem;
-	font-weight: normal;
-}
-
-/* ~~~~~~ MENU MOBILE ~~~~~~ */
+/* ~~ MENU MOBILE/TOGGLE ~~~~ */
 
 .menutoggle {
 	visibility: hidden;
@@ -105,7 +72,7 @@ body.menu-expanded .menutoggle .menutoggle-top {
 	display: flex;
 	justify-content: space-between;
 	align-content: center;
-	padding-top: 1.5rem;
+	padding-top: 2rem;
 }
 
 body.menu-expanded .menutoggle .btn-closemenu {
@@ -114,7 +81,7 @@ body.menu-expanded .menutoggle .btn-closemenu {
 	cursor: pointer;
 	height: fit-content;
 	align-content: flex-start;
-	padding-block: 0.7rem;
+	padding-block: 0.2rem;
 }
 
 body.menu-expanded .menutoggle .menutoggle-nav {
@@ -149,6 +116,40 @@ body.menu-expanded .menutoggle .menutoggle-nav ul a:hover::after {
 	width: 100%;
 }
 /* ~~ Menu Toggle End ~~ */
+
+/* <> HEADER -------- */
+header::before {
+	content: '';
+	background: url(../assets/mobile/image-hero.jpg) no-repeat;
+	background-size: cover;
+	width: 100vw;
+	height: 46rem;
+
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: -1;
+}
+
+header {
+	height: auto;
+}
+
+.herotext {
+	margin: 10rem auto 10rem;
+	display: flex;
+	justify-content: center;
+	border: 2px solid var(--cl-primary-l);
+}
+
+.herotext h1 {
+	color: var(--cl-primary-l);
+	font-family: var(--ff-secondary--);
+	font-size: 2.6rem;
+	line-height: 2.5rem;
+	padding: 1.5rem;
+	font-weight: normal;
+}
 
 /* MAIN CONTENT <> SECTION 1 ----------- */
 
@@ -196,13 +197,13 @@ section#creations {
 
 section#creations .grid-menu {
 	display: grid;
-	grid-template-rows: 4rem repeat(8, 1fr);
+	grid-template-rows: 4rem repeat(8, 8rem) auto;
 
 	row-gap: 1.5rem;
 }
 
 section#creations .grid-menu .grid-item {
-	height: 8rem;
+	background-size: cover;
 }
 
 section#creations .grid-menu .grid-item .gridtext {
@@ -224,7 +225,7 @@ section#creations .grid-menu .grid-item .gridtext:hover {
 	transition: 100ms;
 }
 
-/* grid items -------*/
+/* ~ Grid items/catalogue ~~~~ */
 .grid-menu .item1 {
 	background: linear-gradient(
 			90deg,
@@ -232,7 +233,6 @@ section#creations .grid-menu .grid-item .gridtext:hover {
 			rgba(249, 249, 249, 0) 100%
 		),
 		url(../assets/mobile/image-deep-earth.jpg) no-repeat;
-	background-size: cover;
 }
 
 .grid-menu .item2 {
@@ -242,7 +242,6 @@ section#creations .grid-menu .grid-item .gridtext:hover {
 			rgba(249, 249, 249, 0) 100%
 		),
 		url(../assets/mobile/image-night-arcade.jpg) no-repeat;
-	background-size: cover;
 }
 
 .grid-menu .item3 {
@@ -252,7 +251,6 @@ section#creations .grid-menu .grid-item .gridtext:hover {
 			rgba(249, 249, 249, 0) 100%
 		),
 		url(../assets/mobile/image-soccer-team.jpg) no-repeat;
-	background-size: cover;
 }
 
 .grid-menu .item4 {
@@ -262,7 +260,6 @@ section#creations .grid-menu .grid-item .gridtext:hover {
 			rgba(249, 249, 249, 0) 100%
 		),
 		url(../assets/mobile/image-grid.jpg) no-repeat;
-	background-size: cover;
 }
 
 .grid-menu .item5 {
@@ -272,7 +269,6 @@ section#creations .grid-menu .grid-item .gridtext:hover {
 			rgba(249, 249, 249, 0) 100%
 		),
 		url(../assets/mobile/image-from-above.jpg) no-repeat;
-	background-size: cover;
 }
 
 .grid-menu .item6 {
@@ -282,7 +278,6 @@ section#creations .grid-menu .grid-item .gridtext:hover {
 			rgba(249, 249, 249, 0) 100%
 		),
 		url(../assets/mobile/image-pocket-borealis.jpg) no-repeat;
-	background-size: cover;
 }
 
 .grid-menu .item7 {
@@ -292,7 +287,6 @@ section#creations .grid-menu .grid-item .gridtext:hover {
 			rgba(249, 249, 249, 0) 100%
 		),
 		url(../assets/mobile/image-curiosity.jpg) no-repeat;
-	background-size: cover;
 }
 
 .grid-menu .item8 {
@@ -302,7 +296,6 @@ section#creations .grid-menu .grid-item .gridtext:hover {
 			rgba(249, 249, 249, 0) 100%
 		),
 		url(../assets/mobile/image-fisheye.jpg) no-repeat;
-	background-size: cover;
 }
 
 .btn-grid {
