@@ -162,12 +162,13 @@ section#informational .info-img {
 	line-height: 0%;
 }
 
-.info-img img {
+section#informational .info-img img {
 	width: 100%;
 }
 
 section#informational .info-text {
 	margin: 2.6rem auto;
+	background-color: var(--cl-primary-l);
 }
 
 section h2 {
@@ -178,7 +179,7 @@ section h2 {
 	line-height: 2.3rem;
 }
 
-.info-text p {
+section#informational .info-text p {
 	text-align: center;
 	margin-top: 2rem;
 	color: var(--cl-neutral-l);
@@ -354,7 +355,8 @@ footer {
 	padding-block: 0.5rem;
 }
 
-.footer-menu .footer-menu-nav li::after {
+.footer-menu .footer-menu-nav li::after,
+.nav-items .navlinks li a::after {
 	content: '';
 
 	background-color: var(--cl-primary-l);
@@ -368,7 +370,8 @@ footer {
 	transition: transform 30ms ease-in-out;
 }
 
-.footer-menu .footer-menu-nav li:hover::after {
+.footer-menu .footer-menu-nav li:hover::after,
+.nav-items .navlinks li a:hover::after {
 	transform: scaleX(1);
 }
 

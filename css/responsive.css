@@ -1,0 +1,99 @@
+@media screen and (min-width: 1440px) {
+	.wrapper {
+		width: 80%;
+		max-width: 71rem;
+	}
+	/* <> NAV ----- */
+	.nav-items {
+		padding-top: 1.5rem;
+	}
+
+	.nav-items .btn-openmenu {
+		display: none;
+	}
+
+	.nav-items .navlinks {
+		display: flex;
+		gap: 2rem;
+		height: 2rem;
+		margin-block: auto;
+	}
+
+	.nav-items .navlinks li {
+		display: inline-block;
+		position: relative;
+	}
+
+	.nav-items .navlinks li a {
+		font-family: var(--ff-primary--);
+		display: block;
+		font-size: 1rem;
+		color: var(--cl-primary-l);
+		padding-block: 0.1rem;
+	}
+
+	.nav-items .navlinks li a::after {
+		height: 2px;
+		transition: transform 20ms ease-in-out;
+	}
+	/* <> HEADER ----- */
+
+	header::before {
+		background: linear-gradient(
+				90deg,
+				rgba(0, 0, 0, 0.39539565826330536) 8%,
+				rgba(0, 0, 0, 0.39539565826330536) 89%
+			),
+			url(../assets/desktop/image-hero.jpg) no-repeat;
+		height: 40rem;
+		background-size: cover;
+	}
+
+	header .herotext {
+		max-width: 38rem;
+		margin: 9rem auto 5rem 0;
+	}
+
+	header .herotext h1 {
+		font-size: 4.2rem;
+		line-height: 4rem;
+		padding: 2rem 1rem 2rem 2rem;
+	}
+
+	/* SECTION 1 <> ------ */
+
+	section#informational {
+		margin-top: 20rem;
+		display: flex;
+
+		position: relative;
+	}
+
+	section#informational .info-img img {
+		max-width: 45rem;
+	}
+
+	section#informational .info-text {
+		width: 38rem;
+		padding: 5rem 1rem 4rem 5rem;
+		margin: 0;
+
+		position: absolute;
+
+		right: -2.6rem;
+		top: 13rem;
+	}
+
+	section#informational .info-text h2 {
+		text-align: start;
+		width: 70%;
+	}
+
+	section#informational .info-text p {
+		text-align: start;
+		font-size: 0.8rem;
+		line-height: 1.6rem;
+
+		width: 95%;
+	}
+}
