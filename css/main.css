@@ -216,14 +216,14 @@ section#creations .grid-menu .grid-item .gridtext {
 
 	width: 100%;
 	height: 100%;
-	padding-top: 3.5rem;
-	padding-left: 1.3rem;
+	padding: 3.5rem 0 0 1.3rem;
 }
 
 section#creations .grid-menu .grid-item .gridtext:hover {
 	color: var(--cl-primary-d);
 	background: rgba(255, 255, 255, 0.651);
 	transition: 100ms;
+	cursor: pointer;
 }
 
 /* ~ Grid items/catalogue ~~~~ */
@@ -326,6 +326,11 @@ footer {
 	background: var(--cl-primary-d);
 }
 
+footer .wrapper {
+	display: flex;
+	flex-direction: column;
+}
+
 .footer-menu {
 	display: flex;
 	flex-direction: column;
@@ -334,7 +339,13 @@ footer {
 	padding-block: 3rem;
 }
 
-.footer-menu .footer-menu-nav {
+.footer-flexcontainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.footer-menu-nav {
 	display: flex;
 	flex-direction: column;
 	gap: 1rem;
@@ -342,20 +353,20 @@ footer {
 	margin-top: 1rem;
 }
 
-.footer-menu .footer-menu-nav li {
+.footer-menu-nav li {
 	text-align: center;
 	position: relative;
 }
 
-.footer-menu .footer-menu-nav a {
+.footer-menu-nav a {
 	font-family: var(--ff-primary--);
-	display: block;
+	display: inline-block;
 	font-size: 0.9rem;
 	color: var(--cl-primary-l);
 	padding-block: 0.5rem;
 }
 
-.footer-menu .footer-menu-nav li::after,
+.footer-menu-nav li::after,
 .nav-items .navlinks li a::after {
 	content: '';
 
@@ -370,12 +381,12 @@ footer {
 	transition: transform 30ms ease-in-out;
 }
 
-.footer-menu .footer-menu-nav li:hover::after,
+.footer-menu-nav li:hover::after,
 .nav-items .navlinks li a:hover::after {
 	transform: scaleX(1);
 }
 
-.footer-menu .social-links {
+.social-links {
 	display: flex;
 	gap: 1rem;
 	height: 1rem;
@@ -383,11 +394,11 @@ footer {
 	margin-top: 3rem;
 }
 
-.footer-menu .social-links a {
+.social-links a {
 	display: inline-block;
 }
 
-.footer-menu .social-links a i {
+.social-links a i {
 	color: var(--cl-primary-l);
 }
 
@@ -416,12 +427,13 @@ footer {
 }
 
 .attribution {
-	margin: 0.3rem;
+	margin: 0 auto 2rem;
 	font-size: 0.6rem;
 	color: var(--cl-neutral-l);
+	font-family: var(--ff-primary--);
 }
 
 .attribution a {
-	color: rgb(68, 54, 157);
+	color: rgb(42, 123, 190);
 	text-decoration: underline;
 }
