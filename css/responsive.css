@@ -1,3 +1,90 @@
+@media screen and (max-width: 739px) {
+	.herotext {
+		justify-content: flex-start;
+		max-width: 30rem;
+	}
+
+	.herotext h1 {
+		max-width: 21rem;
+	}
+}
+
+@media screen and (min-width: 740px) and (max-width: 1023px) {
+	.herotext {
+		max-width: 35rem;
+		justify-content: flex-start;
+		margin: 10rem auto 10rem 0;
+	}
+
+	.herotext h1 {
+		font-size: 3rem;
+		max-width: 22rem;
+		line-height: 3rem;
+	}
+
+	section#informational .info-text {
+		max-width: 48rem;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.wrapper {
+		width: 88%;
+	}
+
+	.nav-items .btn-openmenu {
+		display: none;
+	}
+
+	.nav-items .navlinks {
+		display: flex;
+		gap: 1.5rem;
+		height: 2rem;
+		margin-block: auto;
+	}
+
+	.nav-items .navlinks li {
+		display: inline-block;
+		position: relative;
+	}
+
+	.nav-items .navlinks li a {
+		font-family: var(--ff-primary--);
+		display: block;
+		font-size: 1rem;
+		color: var(--cl-primary-l);
+		padding-block: 0.1rem;
+	}
+
+	.nav-items .navlinks li a::after {
+		height: 2px;
+		transition: transform 20ms ease-in-out;
+	}
+
+	header::before {
+		background: linear-gradient(
+				90deg,
+				rgba(0, 0, 0, 0.39539565826330536) 8%,
+				rgba(0, 0, 0, 0.39539565826330536) 89%
+			),
+			url(../assets/desktop/image-hero.jpg) no-repeat;
+		height: 38rem;
+		background-size: cover;
+	}
+
+	.herotext {
+		max-width: 35rem;
+		justify-content: flex-start;
+		margin: 10rem auto 10rem 0;
+	}
+
+	.herotext h1 {
+		font-size: 3.4rem;
+		max-width: 22rem;
+		line-height: 3rem;
+	}
+}
+
 @media screen and (min-width: 1440px) {
 	html {
 		overflow-x: hidden;
