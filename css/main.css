@@ -414,10 +414,6 @@ footer .wrapper {
 	transform: scaleX(1);
 }
 
-.social-links a i:hover {
-	opacity: 0.8;
-}
-
 .footer-menu p:not(.attribution) {
 	color: var(--cl-neutral-l);
 	font-size: 0.9rem;
