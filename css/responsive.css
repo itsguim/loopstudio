@@ -97,7 +97,7 @@
 
 	/* <> Section 1 */
 	section#informational {
-		margin-top: 20rem;
+		margin-top: 15rem;
 		display: flex;
 
 		position: relative;
@@ -131,6 +131,10 @@
 	}
 
 	/* <> Section 2 - GRID */
+	section#creations {
+		margin-top: 14rem;
+	}
+
 	section#creations .grid-menu {
 		grid-template-columns: repeat(auto-fit, minmax(14.5rem, 1fr));
 		grid-template-rows: 3rem repeat(2, 32rem);
@@ -235,6 +239,9 @@
 	}
 
 	/* <> Footer --- */
+	footer {
+		margin: 15rem 0 0 0;
+	}
 
 	.footer-menu,
 	.footer-menu-nav {
