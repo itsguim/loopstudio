@@ -91,8 +91,8 @@
 
 	.herotext h1 {
 		font-size: 3.4rem;
-		max-width: 22rem;
-		line-height: 3rem;
+		max-width: 33rem;
+		line-height: normal;
 	}
 
 	/* <> Section 1 */
