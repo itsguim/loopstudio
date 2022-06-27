@@ -398,6 +398,13 @@ footer .wrapper {
 	display: inline-block;
 }
 
+.social-links a span {
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+	z-index: -5;
+}
+
 .social-links a i {
 	color: var(--cl-primary-l);
 }
