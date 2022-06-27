@@ -19,7 +19,7 @@ A fully responsive landing page using the mobile-first approach, created with th
 
 ### Links:
 
-- Live Site: [Loopstudio Landing Page](https://app.netlify.com/sites/loopstpage/overview)
+- Live Site: [Loopstudio Landing Page](https://loopstpage.netlify.app)
 
 Template design made by: [Frontend Mentor - Loopstudios Landing Page](https://www.frontendmentor.io/challenges/loopstudios-landing-page-N88J5Onjw)
 
