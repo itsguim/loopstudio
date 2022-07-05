@@ -198,12 +198,17 @@ section#creations {
 
 section#creations .grid-menu {
 	display: grid;
-	grid-template-rows: 4rem repeat(8, 8rem) auto;
-
+	grid-template-rows: 4rem auto auto;
 	row-gap: 1.5rem;
 }
 
-section#creations .grid-menu .grid-item {
+section#creations .grid-menu .grid-catalogue {
+	display: grid;
+	grid-auto-rows: 8.5rem;
+	gap: 1.5rem;
+}
+
+section#creations .grid-menu .grid-catalogue .grid-item {
 	background-size: cover;
 }
 
@@ -299,7 +304,7 @@ section#creations .grid-menu .grid-item .gridtext:hover {
 		url(../assets/mobile/image-fisheye.jpg) no-repeat;
 }
 
-.btn-grid {
+section#creations .btn-grid {
 	display: block;
 	margin-inline: auto;
 
@@ -314,7 +319,7 @@ section#creations .grid-menu .grid-item .gridtext:hover {
 	cursor: pointer;
 }
 
-.btn-grid:hover {
+section#creations .btn-grid:hover {
 	background-color: var(--cl-primary-d);
 	color: var(--cl-primary-l);
 	transition: 150ms;
