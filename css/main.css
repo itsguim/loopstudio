@@ -49,6 +49,8 @@ nav .nav-items {
 
 body.menu-expanded {
 	overflow: hidden;
+	position: fixed;
+	/* Fixing position to prevent scrolling on mobile browsers */
 }
 
 body.menu-expanded .menutoggle {

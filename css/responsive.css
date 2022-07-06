@@ -28,10 +28,6 @@
 }
 
 @media screen and (min-width: 1024px) {
-	html {
-		overflow-x: hidden;
-	}
-
 	.wrapper {
 		width: 88%;
 		max-width: 71rem;
