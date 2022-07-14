@@ -50,7 +50,6 @@
 	}
 
 	.nav-items .navlinks li {
-		display: inline-block;
 		position: relative;
 	}
 
@@ -59,12 +58,6 @@
 		display: block;
 		font-size: 0.9rem;
 		color: var(--cl-primary-l);
-		padding-block: 0.1rem;
-	}
-
-	.nav-items .navlinks li a::after {
-		height: 2px;
-		transition: transform 20ms ease-in-out;
 	}
 
 	/* <> Header ---- */
