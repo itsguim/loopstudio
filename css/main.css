@@ -208,8 +208,6 @@ section#creations .grid-menu .grid-catalogue {
 	display: grid;
 	grid-auto-rows: 8.5rem;
 	gap: 1.5rem;
-
-	padding-top: 4rem;
 }
 
 section#creations .grid-menu .grid-catalogue .grid-item {
