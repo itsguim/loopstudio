@@ -1,7 +1,15 @@
-function openMenu() {
-	document.body.classList.add('menu-expanded');
-}
+function initMenuToggle() {
+	const btnOpen = document.querySelector('.btn-openmenu'),
+		btnClose = document.querySelector('.btn-closemenu');
+	;
 
-function closeMenu() {
-	document.body.classList.remove('menu-expanded');
+	function menuToggle() {
+		document.body.classList.toggle('menu-expanded')
+	}
+
+	btnOpen.addEventListener('click', menuToggle)
+	btnClose.addEventListener('click', menuToggle)
+
 }
+initMenuToggle()
+
